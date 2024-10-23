@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Davina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <img src="profiledavina.png" width="50px" height="60px" border-radius="5px">
+        <h1 style="margin-left: 10px;""> Profil Davina</h1>
+    </header>
+
+    <nav>
+        <ul> 
+            <!--tag section dimulai dari sini-->
+            <li><a href="#" onclick="showContent('biodata')">Biodata</a></li>
+            <li><a href="#" onclick="showContent('pendidikan')">Pendidikan</a></li>
+            <li><a href="#" onclick="showContent('pengalaman')">Pengalaman</a></li>
+            <li><a href="#" onclick="showContent('keahlian')">Keahlian</a></li>
+            <li><a href="#" onclick="showContent('publikasi')">Publikasi</a></li>
+        </ul>
+    </nav>
+
+    <section id="content">
+        <article id="biodata" class="content-section">
+            <h2>Biodata</h2>
+            <p>NIM: 2023081003</p>
+            <p>Nama: Davina Intan Aurelya</p>
+            <p>Agama: Islam</p>
+            <p>Tanggal Lahir: 24 Maret 2005</p>
+            <p>Tempat Lahir: Jakarta</p>
+        </article>
+        <article id="pendidikan" class="content-section" style="display: none;">
+            <h2>Pendidikan</h2>
+            <h4>Universitas Pembangunan Jaya (S1) </h4>
+            <h5>2023 - present<br></h5>
+            <br><br>
+            <h4>Sinar Cendekia (SMA) </h4>
+            <h5>2020 - 2023</h5>
+        </article>
+        <article id="pengalaman" class="content-section" style="display: none;">
+            <h2>Pengalaman</h2>
+            <h4>HIMASIF 2024</h4>
+            <h5>Anggota Divisi Minat dan Bakat<br></h5>
+            <p>> berkontribusi dalam pengembangan program dan kegiatan yang bertujuan untuk meningkatkan
+                minat dan bakat mahasiswa akademik dan non-akademik.<br>
+                > berpartisipasi dalam brainstorming dan evaluasi acara untuk meningkatkan kualitas kegiatan yang
+                diselenggarakan.</p><br><br>
+
+            <h4>GIDHUB 2024</h4>
+            <h5>Staff Divisi Dana Usaha<br></h5>
+            <p>> Menjual dan mempromosikan barang jualan untuk meningkatkan pendapatan kepanitiaan.<br>
+                > Memberikan informasi kepada pembeli tentang barang yang dijual.<br>
+                > Berkomunikasi dengan tim internal dalam menyampaikan progres penjualan.</p>
+        </article>
+        <article id="keahlian" class="content-section" style="display: none;">
+            <h2>Keahlian</h2>
+            <p>design<br></p>
+            <p>coding<br></p>
+            <p>mewarnai</p>
+        </article>
+        <article id="publikasi" class="content-section" style="display: none;">
+            <h2>Publikasi</h2>
+            <h4>PENGGUNAAN DUOLINGO DALAM
+                MENINGKATKAN KEMAMPUAN
+                MEMBACA BAHASA KOREA SISWA SMA ISLAM SINAR CENDEKIA</h4>
+            <h5>terbit: 2023<br></h5>
+        </article>
+    </section>
+
+    <aside>
+        <h2>Hobi</h2>
+        <ul>
+            <li>Membaca</li>
+            <li>Pemrograman</li>
+        </ul>
+    </aside>
+
+    <footer>
+        <p>Instagram: @aurelyys_ <br>
+            linkedin: 
+        </p>
+        <i>&copy; 2024. All Rights Reserved.</i>
+        <k>preparing better future <br>
+        with technology
+        </k>
+    </footer>
+
+    <script>
+        function showContent(section) {
+            // Hide all content sections
+            var sections = document.querySelectorAll('.content-section');
+            sections.forEach(function(article) {
+                article.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
